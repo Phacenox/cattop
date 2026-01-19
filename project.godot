@@ -11,8 +11,14 @@ config_version=5
 [application]
 
 config/name="Cattop"
+run/main_scene="uid://clmp06bhprkd5"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/transparent=true
+window/per_pixel_transparency/allowed=true
 
 [dotnet]
 
@@ -20,5 +26,8 @@ project/assembly_name="Cattop"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.301961, 0.301961, 0.301961, 0)
+viewport/transparent_background=true
